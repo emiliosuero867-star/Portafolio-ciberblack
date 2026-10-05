@@ -1,0 +1,192 @@
+:root {
+    --bg-primary: #0d0914;
+    --bg-darker: #07040a;
+    --neon-purple: #c084fc;
+    --neon-gold: #facc15;
+    --neon-pink: #f472b6;
+    --text-light: #e2e8f0;
+}
+
+body {
+    background-color: var(--bg-primary);
+    color: var(--text-light);
+    font-family: 'Rajdhani', sans-serif;
+    overflow-x: hidden;
+}
+
+.font-orbitron {
+    font-family: 'Orbitron', sans-serif;
+}
+
+.text-neon-purple {
+    color: var(--neon-purple) !important;
+    text-shadow: 0 0 12px rgba(192, 132, 252, 0.7);
+}
+
+.text-neon-gold {
+    color: var(--neon-gold) !important;
+    text-shadow: 0 0 12px rgba(250, 204, 21, 0.7);
+}
+
+.text-light-custom {
+    color: #f1f5f9 !important;
+    font-weight: 500;
+}
+
+.bg-darker {
+    background-color: var(--bg-darker) !important;
+}
+
+/* Navbar Flotante */
+.cyberpunk-nav {
+    background: rgba(13, 9, 20, 0.95);
+    backdrop-filter: blur(10px);
+    border-bottom: 2px solid var(--neon-purple);
+}
+
+.cyberpunk-nav .nav-link {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 0.9rem;
+    color: #ffffff !important;
+    transition: 0.3s;
+}
+
+.cyberpunk-nav .nav-link:hover {
+    color: var(--neon-gold) !important;
+    text-shadow: 0 0 8px var(--neon-gold);
+}
+
+/* Hero Section */
+.hero-section {
+    min-height: 100vh;
+    padding-top: 100px;
+    background: radial-gradient(circle at 70% 30%, rgba(192, 132, 252, 0.15) 0%, rgba(13, 9, 20, 1) 70%);
+}
+
+.badge-opm {
+    display: inline-block;
+    padding: 6px 15px;
+    background: rgba(250, 204, 21, 0.1);
+    border: 1px solid var(--neon-gold);
+    color: var(--neon-gold);
+    font-family: 'Orbitron', sans-serif;
+    font-size: 0.85rem;
+    box-shadow: 0 0 12px rgba(250, 204, 21, 0.3);
+}
+
+/* Marco de Foto Perfil Anime */
+.profile-frame {
+    position: relative;
+    display: inline-block;
+    border: 3px solid var(--neon-gold);
+    box-shadow: 0 0 30px rgba(250, 204, 21, 0.4);
+    overflow: hidden;
+    background: #000;
+    border-radius: 12px;
+}
+
+.profile-img {
+    filter: contrast(1.15) saturate(1.3);
+    display: block;
+    max-height: 400px;
+    object-fit: cover;
+}
+
+.cyber-scanline {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.2) 50%);
+    background-size: 100% 4px;
+    pointer-events: none;
+}
+
+/* Botones Anime Style */
+.btn-anime-purple {
+    background: transparent;
+    border: 2px solid var(--neon-purple);
+    color: var(--neon-purple);
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 700;
+    box-shadow: 0 0 10px rgba(192, 132, 252, 0.3);
+    transition: 0.3s;
+}
+
+.btn-anime-purple:hover {
+    background: var(--neon-purple);
+    color: #000;
+    box-shadow: 0 0 20px var(--neon-purple);
+}
+
+.btn-anime-gold {
+    background: transparent;
+    border: 2px solid var(--neon-gold);
+    color: var(--neon-gold);
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 700;
+    box-shadow: 0 0 10px rgba(250, 204, 21, 0.3);
+    transition: 0.3s;
+}
+
+.btn-anime-gold:hover {
+    background: var(--neon-gold);
+    color: #000;
+    box-shadow: 0 0 20px var(--neon-gold);
+}
+
+.btn-outline-anime {
+    border: 1px solid #cbd5e1;
+    color: #ffffff;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 0.85rem;
+    transition: 0.3s;
+}
+
+.btn-outline-anime:hover, .btn-outline-anime.active {
+    border-color: var(--neon-gold);
+    color: var(--neon-gold);
+    box-shadow: 0 0 10px rgba(250, 204, 21, 0.4);
+}
+
+/* Terminal & Stat Boxes */
+.terminal-box {
+    background: rgba(18, 12, 28, 0.85);
+    border: 1px solid var(--neon-purple);
+    box-shadow: inset 0 0 15px rgba(192, 132, 252, 0.15);
+    border-radius: 8px;
+}
+
+.stat-card {
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(192, 132, 252, 0.2);
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.stat-card:hover {
+    border-color: var(--neon-gold);
+    box-shadow: 0 0 15px rgba(250, 204, 21, 0.3);
+}
+
+/* Tech & Project Cards */
+.tech-card, .project-card {
+    background: rgba(22, 15, 34, 0.9);
+    border: 1px solid rgba(192, 132, 252, 0.25);
+    border-radius: 8px;
+    transition: all 0.3s ease-in-out;
+}
+
+.tech-card:hover, .project-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--neon-purple);
+    box-shadow: 0 0 20px rgba(192, 132, 252, 0.4);
+}
+
+.cyber-divider {
+    width: 90px;
+    height: 3px;
+    background: linear-gradient(90deg, var(--neon-purple), var(--neon-gold));
+    margin-top: 10px;
+}
